@@ -1,0 +1,284 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="modal.css">
+    <title>form practice
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h2>Billing details</h2>
+    </div>
+    <div class="form-details">
+        <form>
+            <div class="input-name"></div>
+        </form>
+    </div>
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" placeholder="John Doe">
+    </div>
+    <div class="container">
+
+        <form class="form">
+
+            <div class="flex">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" required id="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="phone">Gender</label>
+                <div class="flex">
+                    <div class="form-group">
+                        <label for="">Male</label>
+                        <input type="radio" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Female</label>
+                        <input type="radio" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Other</label>
+                        <input type="radio" id="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education</label>
+                <select name="education" id="education">
+                    <option value="see">SEE</option>
+                    <option value="+2">+2</option>
+                    <option value="bachelors">Bachelors</option>
+                </select>
+            </div>
+
+
+            <div class="flex">
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="">Accept terms and conditions</label>
+                <input type="checkbox">
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date">
+                <input type="time" id="date">
+            </div>
+            <div class="form-group">
+                <label for="color">Color</label>
+                <input type="color" id="color">
+            </div>
+
+            <button class="button">Submit</button>
+
+        </form>
+        <div class=" pt-[7.5rem] px-[3.25rem] pb-[3.9375rem] max-w-[39.6875rem]">
+
+            <form name="users-form">
+                <div class="mt-[2.25rem]">
+                    <label for="YourName" class="font-medium text-base leading-6 ">Your Name</label>
+                    <input type="text" id="yourname"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required
+                    name="yourname" />
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="emailaddress" class="font-medium text-base leading-6">Email address </label>
+                    <input type="email" name="emailaddress"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required />
+                </div>
+                
+                <div class="mt-[2.25rem]">
+                    <label for="subject" class="font-medium text-base leading-6">Subject</label>
+                    <input type="text" name="subject"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required />
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="message" class="font-medium text-base leading-6">Message</label>
+                    <input type="text" class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full"
+                    required id="message" name="message" required>
+                </div>
+                
+                
+                
+                <button type="button" class=" bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem]"
+                onclick="validateForm()">Submit</button>
+            </form>
+        </div>
+        
+    </div>
+    <section>
+
+        <ul class="flex items-center bg-red-100">
+            <table>
+                <thead>
+                    <th class="p-[1rem]">Your Name</th>
+                    <th class="p-[1rem]">Email Address</th>
+                    <th class="p-[1rem]">Subject</th>
+                    <th class="p-[1rem]">Message</th>
+
+                </thead>
+                <tbody id="data">
+                    <tr class="p-[1rem]">
+
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+    </section>
+
+    <!---- conatct ko form  yesma JS conatct.js bhitra ko firsat alert wala ho------>*
+
+    <div class=" pt-[7.5rem] px-[3.25rem] pb-[3.9375rem] max-w-[39.6875rem]">
+        <form name="users-Form2">
+            <div class="mt-[2.25rem]">
+                <label for="Yourname" class="font-medium text-base leading-6 ">Your name</label>
+                <br><input type="text" id="Yourname" name="Name"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="Emailaddress" class="font-medium text-base leading-6">Email address</label>
+                <br>
+                <input type="text" id="Emailaddress" name="emailAddress"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="Subject" class="font-medium text-base leading-6">Subject</label>
+                <br><input type="text" id="Subject" name="Subject"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="Message" class="font-medium text-base leading-6">Message</label>
+                <br><input type="text" id="Message" name="Message"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[7.5rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[3.0625rem]">
+                <button class=" bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem]"
+                   type="button" onclick="validateForm2()">Submit</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <!---- checkout ko form  yesma JS checkout.js bhitra ko firsat alert wala ho------>
+    <form name="users-form">
+        <div>
+            <h1 class=" font-semibold text-4xl leading-[3.375rem]">Billing details</h1>
+            <div class="flex flex-wrap justify-between">
+                <div class="mt-[2.25rem]">
+                    <label for="firstName" class="font-medium text-base leading-6 ">First Name</label><br>
+                    <input type="text" id="firstName" name="firstName"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
+                        required />
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="lastName" class="font-medium text-base leading-6">Last Name</label><br>
+                    <input type="text" name="lastName"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
+                        required />
+                </div>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="country" class="font-medium text-base leading-6">Country / Region</label>
+                <select name="country" id="country"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Nepal">Nepal</option>
+                    <option value="India">India</option>
+                    <option value="Bhutan">Bhutan</option>
+                    <option value="Paskistan">Pakistan</option>
+                </select>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="address" class="font-medium text-base leading-6">Street address</label>
+                <input type="text" name="address"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="town" class="font-medium text-base leading-6">Town / City</label>
+                <input type="text" name="town"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="province" class="font-medium text-base leading-6">Province</label>
+                <select name="province" id="province"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                    <option value=" Koshi"> Koshi</option>
+                    <option value=" Madhesh Pradesh">Madhesh Pradesh</option>
+                    <option value=" Bagmati Province">Bagmati Province</option>
+                    <option value=" Gandaki">Gandaki</option>
+                    <option value=" Lumbini">Lumbini</option>
+                    <option value=" Karnali">Karnali</option>
+                    <option value=" Sudurpashchim">Sudurpashchim</option>
+                </select>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="zipcode" class="font-medium text-base leading-6">ZIP Code</label>
+                <input type="number" name="zipcode" id="zipcode"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="phone" class="font-medium text-base leading-6">Phone</label>
+                <input type="tel" name="phone" id="phone"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="email" class="font-medium text-base leading-6">Email Id</label>
+                <input type="email" required id="email address" name="email"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+            <div class="mt-[2.25rem]">
+
+                <input type="text" name="additional" placeholder="  Additional Information"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+            </div>
+        </div>
+
+    </form>
+    
+    <script src="./contact.js"></script>
+</body>
+
+</html>

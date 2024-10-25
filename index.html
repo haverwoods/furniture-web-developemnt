@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline hover:text-blue-600">
+      Hello world!
+    </h1>
+    <div>
+      <button class="bg-green-200 hover:bg-green-300 mt-[10px]">click</button>
+    </div>
+
+    <div class="mt-[20px]">
+      <p class="bg-red-200 p-[10px]">samrat</p>
+      <p class="bg-violet-200 p-[10px]">shrestha</p>
+      <p class="bg-blue-400 p-[10px] border-4">kathmandu</p>
+    </div>
+    <!-- flex -->
+    <div class="flex">
+      <div class="flex-none bg-violet-200 pr-[10px]">About Us</div>
+      <div class="flex-1 bg-green-200 pl-[10px]">contact</div>
+      <div class="flex-1 bg-red-200">Image</div>
+    </div>
+    <!-- grid -->
+    <div class=" grid grid-cols-3 gap-4 bg-emerald-100">
+        <div>apple</div>
+        <div>banana</div>
+        <div>orange</div>
+        <div>grape</div>
+        <div>watermelon</div>
+        <div>pineapple</div>
+        <div>dragonfruit</div>
+        <div>Avocado</div>
+    </div>
+  </body>
+</html>
+
+*{
+  font-family: "Poppins", sans-serif;
+  
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    padding: 10px;
+  }
+  .flex-nowrap {
+    flex-wrap: wrap;
+  }
+  #headerClick {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #headerClick button {
+    background-color: #B88E2F;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #headerClick button:hover {
+    background-color: #F7DC6F;
+  }
+  #headerClick button:active {
+    transform: scale(0.9);
+  }
+  .mobile-nav {
+    display: none;
+  }
+}

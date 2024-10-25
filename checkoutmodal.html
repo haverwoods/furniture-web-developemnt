@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header2.css">
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <title>Furniro</title>
+</head>
+
+<body>
+    <div class="container max-w-[38rem] px-[4.8125rem] py-[2.1875rem]">
+        <form name="users-form">
+            <div>
+                <h1 class=" font-semibold text-4xl leading-[3.375rem]">Billing details</h1>
+                <div class="flex flex-wrap justify-between">
+                    <div class="mt-[2.25rem]">
+                        <label for="firstName" class="font-medium text-base leading-6 ">First Name</label><br>
+                        <input type="text" id="firstName" name="firstName" required
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]" />
+                    </div>
+                    <div class="mt-[2.25rem]">
+                        <label for="lastName" class="font-medium text-base leading-6">Last Name</label><br>
+                        <input type="text" name="lastName"
+                            class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 min-w-[13.25rem]"
+                            required />
+                    </div>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="country" class="font-medium text-base leading-6">Country / Region</label>
+                    <select name="country" id="country"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="India">India</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Paskistan">Pakistan</option>
+                    </select>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="address" class="font-medium text-base leading-6">Street address</label>
+                    <input type="text" name="address"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="town" class="font-medium text-base leading-6">Town / City</label>
+                    <input type="text" name="town"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="province" class="font-medium text-base leading-6">Province</label>
+                    <select name="province" id="province"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                        <option value=" Koshi"> Koshi</option>
+                        <option value=" Madhesh Pradesh">Madhesh Pradesh</option>
+                        <option value=" Bagmati Province">Bagmati Province</option>
+                        <option value=" Gandaki">Gandaki</option>
+                        <option value=" Lumbini">Lumbini</option>
+                        <option value=" Karnali">Karnali</option>
+                        <option value=" Sudurpashchim">Sudurpashchim</option>
+                    </select>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="zipcode" class="font-medium text-base leading-6">ZIP Code</label>
+                    <input type="number" name="zipcode" id="zipcode"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="phone" class="font-medium text-base leading-6">Phone</label>
+                    <input type="tel" name="phone" id="phone"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+                <div class="mt-[2.25rem]">
+                    <label for="email" class="font-medium text-base leading-6">Email Id</label>
+                    <input type="email" required id="email address" name="email"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+                <div class="mt-[2.25rem]">
+
+                    <input type="text" name="additional" placeholder="  Additional Information"
+                        class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="container max-w-[38rem] px-[2.375rem] py-[5.4375rem] ">
+        <div class=" grid grid-cols-2">
+            <div>
+                <h1 class="font-medium text-2xl leading-9"> Produts</h1>
+                <p class=" font-normal text-[#9F9F9F]  leading-6 text-base mt-[0.875rem]">Asgaard sofa <span
+                        class="text-black text-base"> x </span> <span class="text-black text-base"> 1</span></p>
+                <p class="font-normal text-base leading-6 mt-[1.375rem]">Subtotal</p>
+                <p class=" font-normal text-base leading-6 mt-[1.375rem]">Total</p>
+            </div>
+            <div class="text-right">
+                <h1 class="font-medium text-2xl leading-9">Subtotal</h1>
+                <p class=" font-light leading-6 text-base mt-[0.875rem]">Rs. 250,000.00</p>
+                <p class="font-light text-base leading-6 mt-[1.375rem]">Rs. 250,000.00</p>
+                <p class="font-bold text-[#B88E2F] text-4xl leading-9 mt-[1.375rem]">Rs. 250,000.00</p>
+            </div>
+        </div>
+        <div class="border-[1px] border-[#D9D9D9] mt-[2.5rem]"></div>
+        <h2 class=" relative font-normal leading-6 ml-4 mt-[1.4375rem]"><span
+                class="absolute bottom-1 left-[-0.98rem]"><img src="./image/Ellipse button.png"
+                    class="h-[0.875rem] w-[0.875rem]"></span>Direct Bank Transfer</h2>
+        <p class="text-[#9F9F9F] text-justify text-base font-light leading-6 mt-[0.6875rem]">Make your payment
+            directly into our bank account. Please use your Order ID as the payment reference. Your order will not
+            be shipped until the funds have cleared in our account.</p>
+        <div class="mt-[1.5625rem]">
+            <input type="radio"> <label for="Direct Bank Transfer"
+                class="text-[#9F9F9F] text-base font-medium leading-6">Direct Bank Transfer</label>
+        </div>
+        <div class="mt-[0.6875rem]">
+            <input type="radio"> <label for="Cash On Delivery"
+                class="text-[#9F9F9F] text-base font-medium leading-6">Cash On Delivery</label>
+
+        </div>
+        <p class=" text-base text-justify font-light leading-6 mt-[1.375rem]">Your personal data will be used to
+            support your experience throughout this website, to manage access to your account, and for other
+            purposes described in our <span class="font-bold">privacy policy.</span></p>
+        <div class="flex justify-center">
+            <button
+                class="font-normal text-xl leading-8 border border-[#000000] rounded-2xl w-[19.875rem] h-16 mt-[2.5rem] hover:bg-neutral-100"
+                type="button" onclick="validateForm() " id="openModal">Place
+                order</button>
+        </div>
+    </div>
+
+
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50  justify-center items-center z-50">
+        <div class="flex justify-center items-center h-full w-full">
+            <div class="bg-white rounded-lg p-8 w-6/12 fade-in modal-content">
+                <div class="mb-4">
+                    <h2 class="text-xl font-bold">Data List</h2>
+                </div>
+                <ul class="flex items-center bg-red-100">
+                    <table class="table-auto">
+                        <thead>
+                            <th class="">First Name</th>
+                            <th>Last Name</th>
+                            <th>CountryRegion</th>
+                            <th>Address</th>
+                            <th>Town/City</th>
+                            <th>province</th>
+                            <th>ZIP Code</th>
+                            <th>phone</th>
+                            <th>Email Address</th>
+                            <th>Additional Information</th>
+                        </thead>
+                        <tbody id="data">
+                            <tr class="p-[1rem]">
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+                <div>
+                    <button id="closeModal"
+                        class="bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem] flex justify-center">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="checkout.js"></script>
+    <script src="./header2.js"></script>
+    <script src="checkmodal.js"></script>
+
+</body>
+
+</html>

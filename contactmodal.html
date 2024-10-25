@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header2.css">
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <title>Furniro</title>
+</head>
+
+<body>
+    <div class=" pt-[7.5rem] px-[3.25rem] pb-[3.9375rem] max-w-[39.6875rem]">
+
+        <form name="users-form">
+            <div class="mt-[2.25rem]">
+                <label for="YourName" class="font-medium text-base leading-6 ">Your Name</label>
+                <input type="text" id="yourname"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required
+                    name="yourname" />
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="emailaddress" class="font-medium text-base leading-6">Email address </label>
+                <input type="email" name="emailaddress"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required />
+            </div>
+
+            <div class="mt-[2.25rem]">
+                <label for="subject" class="font-medium text-base leading-6">Subject</label>
+                <input type="text" name="subject"
+                    class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full" required />
+            </div>
+            <div class="mt-[2.25rem]">
+                <label for="message" class="font-medium text-base leading-6">Message</label>
+                <input type="text" class="border border-[#9F9F9F] rounded-[0.625rem] min-h-[4.6875rem] mt-6 w-full"
+                    required id="message" name="message" required>
+            </div>
+
+
+
+            <button type="button" class=" bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem]"
+                onclick="validateForm()" id="openModal">Submit</button>
+        </form>
+    </div>
+
+    
+    <div id="modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden justify-center items-center z-50">
+        <div class="flex justify-center items-center h-full w-full">
+            <div class="bg-white rounded-lg p-8 w-6/12 fade-in modal-content">
+                <div class="mb-4">
+                    <h2 class="text-xl font-bold">Data List</h2>
+                </div>
+                <ul class="flex items-center bg-red-100">
+                    <table>
+                        <thead>
+                            <th class="p-[1rem]">Your Name</th>
+                            <th class="p-[1rem]">Email Address</th>
+                            <th class="p-[1rem]">Subject</th>
+                            <th class="p-[1rem]">Message</th>
+
+                        </thead>
+                        <tbody id="data">
+                            <tr class="p-[1rem]">
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </ul>
+                <div>
+                    <button id="closeModal"
+                        class="bg-[#B88E2F] py-[0.875rem] px-[5.5625rem] rounded-[0.3125rem] mt-[3.0625rem]">
+                        Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./contact.js"></script>
+    <script src="./header2.js"></script>
+    <script src="./modal.js"></script>
+
+</body>
+
+</html>
